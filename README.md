@@ -77,6 +77,21 @@ python dwpose_infer_example.py
 Note: Please change the image path and output path based on your file.
 
 
+#### Run DWPose as a persistent service (for Java/Python projects)
+
+```
+cd ControlNet-v1-1-nightly
+python dwpose_server.py
+```
+
+See `ControlNet-v1-1-nightly/README_DWPOSE_SERVER.md` for API details.
+
+You can also export key runtime files into your own project (e.g. dyq):
+```
+python tools/export_to_dyq.py /path/to/dyq
+```
+
+
 ## 🚢 Datasets
 Prepare [COCO](https://cocodataset.org/#download) in mmpose/data/coco and [UBody](https://github.com/IDEA-Research/OSX) in mmpose/data/UBody.
 
